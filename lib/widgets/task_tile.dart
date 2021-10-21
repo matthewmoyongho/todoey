@@ -21,12 +21,7 @@ class _TaskTileState extends State<TaskTile> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: const Text(
-        'Do this',
-        style: TextStyle(
-            decoration:
-                isChecked ? TextDecoration.lineThrough : TextDecoration.none),
-      ),
+      title: const Text('Do this'),
       trailing: TaskCheckBox(
         isCheched: isChecked,
         onPressed: (val) {
